@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.alphabet.mvvmbinding.databinding.FragmentBindingBinding
 
 
@@ -13,6 +14,8 @@ import com.alphabet.mvvmbinding.databinding.FragmentBindingBinding
  * fragment to bind data
  */
 class BindingFragment : Fragment() {
+
+    lateinit var binding: FragmentBindingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +26,7 @@ class BindingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentBindingBinding>(
+        binding = DataBindingUtil.inflate<FragmentBindingBinding>(
             inflater,
             R.layout.fragment_binding,
             container,
@@ -34,4 +37,12 @@ class BindingFragment : Fragment() {
         return binding.root
     }
 
+    override fun onStart() {
+        super.onStart()
+        binding.viewModel?.bindSkip?.observe(this) {
+            if (it) {
+                findNavController().navigate(R.id.bindingRecyclerViewFragment)
+            }
+        }
+    }
 }

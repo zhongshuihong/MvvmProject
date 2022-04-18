@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bindingFragment">
+
+    <fragment
+        android:id="@+id/bindingFragment"
+        android:name="com.alphabet.mvvmbinding.BindingFragment"
+        android:label="@id/bindingFragment" />
+
+    <fragment
+        android:id="@+id/bindingRecyclerViewFragment"
+        android:name="com.alphabet.mvvmbinding.BindingRecyclerViewFragment"
+        android:label="@id/bindingRecyclerViewFragment" />
+
+</navigation>

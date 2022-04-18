@@ -8,6 +8,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction().replace(R.id.fl_container, BindingFragment()).commit()
+//        supportFragmentManager.beginTransaction().replace(R.id.fl_container, BindingFragment()).commit()
     }
 }
