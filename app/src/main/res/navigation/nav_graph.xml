@@ -14,4 +14,13 @@
         android:name="com.alphabet.mvvmbinding.BindingRecyclerViewFragment"
         android:label="@id/bindingRecyclerViewFragment" />
 
+    <fragment
+        android:id="@+id/constraintFragment"
+        android:name="com.alphabet.mvvmbinding.constraintlayout.ConstraintFragment"
+        android:label="ConstraintFragment" />
+
+    <fragment
+        android:id="@+id/motionFragment"
+        android:name="com.alphabet.mvvmbinding.constraintlayout.MotionFragment"
+        android:label="MotionFragment" />
 </navigation>

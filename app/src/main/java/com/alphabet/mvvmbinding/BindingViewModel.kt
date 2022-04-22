@@ -13,6 +13,8 @@ class BindingViewModel {
 
     val bindSkip by lazy { MutableLiveData<Boolean>() }
 
+    val bindMotion by lazy { MutableLiveData<Boolean>() }
+
     fun onClick(v: View) {
         when(v.id) {
             R.id.btn_click -> {
@@ -23,6 +25,9 @@ class BindingViewModel {
                 //
                 bindSkip.value = true
 //                findNavController()
+            }
+            R.id.btn_motion -> {
+                bindMotion.value = true
             }
         }
     }

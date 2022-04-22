@@ -29,5 +29,8 @@ class BindingFragment : BaseFragment<FragmentBindingBinding>() {
                 findNavController().navigate(R.id.bindingRecyclerViewFragment)
             }
         }
+        binding.viewModel?.bindMotion?.observe(this) {
+            findNavController().navigate(R.id.motionFragment)
+        }
     }
 }
