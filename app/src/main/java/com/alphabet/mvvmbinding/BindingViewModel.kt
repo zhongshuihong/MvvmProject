@@ -1,12 +1,16 @@
 package com.alphabet.mvvmbinding
 
 import android.view.View
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.fragment.findNavController
+import androidx.lifecycle.ViewModel
+import com.alphabet.mvvmbinding.repository.Repository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class BindingViewModel {
+@HiltViewModel
+class BindingViewModel @Inject constructor(
+    private val repository: Repository
+): ViewModel() {
 
     var count = 0
     val bindText by lazy { MutableLiveData<String>("Binding test") }
