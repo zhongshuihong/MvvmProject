@@ -1,7 +1,8 @@
-package com.alphabet.mvvmbinding
+package com.alphabet.mvvmbinding.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.alphabet.mvvmbinding.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

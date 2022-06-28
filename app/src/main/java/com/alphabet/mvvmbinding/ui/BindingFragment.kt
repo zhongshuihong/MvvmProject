@@ -1,8 +1,9 @@
-package com.alphabet.mvvmbinding
+package com.alphabet.mvvmbinding.ui
 
 import android.os.Bundle
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.alphabet.mvvmbinding.R
 import com.alphabet.mvvmbinding.base.BaseFragment
 import com.alphabet.mvvmbinding.databinding.FragmentBindingBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -14,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class BindingFragment : BaseFragment<FragmentBindingBinding>() {
 
-//    private val mBinding: FragmentBindingBinding by binding()
     private val mViewModel: BindingViewModel by viewModels()
 
     override fun getContentLayout(): Int = R.layout.fragment_binding

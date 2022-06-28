@@ -6,12 +6,12 @@
 
     <fragment
         android:id="@+id/bindingFragment"
-        android:name="com.alphabet.mvvmbinding.BindingFragment"
+        android:name="com.alphabet.mvvmbinding.ui.BindingFragment"
         android:label="@id/bindingFragment" />
 
     <fragment
         android:id="@+id/bindingRecyclerViewFragment"
-        android:name="com.alphabet.mvvmbinding.BindingRecyclerViewFragment"
+        android:name="com.alphabet.mvvmbinding.ui.BindingRecyclerViewFragment"
         android:label="@id/bindingRecyclerViewFragment" />
 
     <fragment

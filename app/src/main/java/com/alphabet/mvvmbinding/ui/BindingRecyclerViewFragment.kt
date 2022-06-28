@@ -1,8 +1,8 @@
-package com.alphabet.mvvmbinding
+package com.alphabet.mvvmbinding.ui
 
+import com.alphabet.mvvmbinding.R
 import com.alphabet.mvvmbinding.base.BaseFragment
 import com.alphabet.mvvmbinding.databinding.BindingRecyclerViewBinding
-import com.alphabet.mvvmbinding.databinding.FragmentBindingBinding
 
 class BindingRecyclerViewFragment : BaseFragment<BindingRecyclerViewBinding>() {
 
